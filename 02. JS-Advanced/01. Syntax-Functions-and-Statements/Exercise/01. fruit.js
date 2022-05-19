@@ -1,7 +1,7 @@
 function moneyNeededForFruit(fruit, grams, pricePerKg){
-    let kg = (grams / 1000).toFixed(2)
-    let finalSum = (kg * pricePerKg).toFixed(2)
-    console.log(`I need $${finalSum} to buy ${kg} kilograms ${fruit}.`)
+    let kg = grams / 1000
+    let finalSum = kg * pricePerKg
+    console.log(`I need $${finalSum.toFixed(2)} to buy ${kg.toFixed(2)} kilograms ${fruit}.`)
 }
 
 
