@@ -4,14 +4,14 @@ function search() {
   let result = document.getElementById("result");
 
   let count = 0
+
+  towns = Array.from(towns)
   
   for (let town of towns){
      if (town.textContent.includes(searchWord)){
-        town.style.fontweight = 'bold'
-        town.style.textDecoration = 'underline'
+        town.style.textDecoration = 'bold underline'
         count += 1
      } else {
-      town.style.fontweight = 'normal'
       town.style.textDecoration = 'none'
      }
   }
